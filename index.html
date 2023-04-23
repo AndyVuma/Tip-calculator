@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Define some styles for the elements */
+    h1 {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #66c;
+      color: white;
+      border: none;
+    }
+
+    p {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tip Calculator</h1>
+  <!-- Create a form to get the user input -->
+  <form id="tip-form">
+    <label for="bill-amount">Bill Amount ($)</label>
+    <input type="number" id="bill-amount" placeholder="Enter the bill amount" required>
+    <label for="tip-percent">Tip Percent (%)</label>
+    <input type="number" id="tip-percent" placeholder="Enter the tip percent" required>
+    <button type="submit">Calculate Tip</button>
+  </form>
+  <!-- Create a paragraph to display the tip amount -->
+  <p id="tip-message"></p>
+  <!-- Add a script tag to link the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
